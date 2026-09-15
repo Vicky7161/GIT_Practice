@@ -12,7 +12,7 @@ jobs:
     needs: first-job
     runs-on: ubuntu-latest
     steps:
-      - name: test-step
+      - name: second-step
         run: echo "This is a test step"
       - name: test-code
         uses: actions/checkout@v6
