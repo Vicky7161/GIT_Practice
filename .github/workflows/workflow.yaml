@@ -8,3 +8,10 @@ jobs:
         run: echo "Hello World"
       - name: github checkout
         uses: actions/checkout@v6
+  second-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: test-step
+        run: echo "This is a test step"
+      - name: test-code
+        uses: actions/checkout@v6
